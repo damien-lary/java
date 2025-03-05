@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class CalculMoyenne {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Entrez la première note: ");
+        double note1 = scanner.nextDouble();
+        
+        System.out.print("Entrez la deuxième note: ");
+        double note2 = scanner.nextDouble();
+        
+        System.out.print("Entrez la troisième note: ");
+        double note3 = scanner.nextDouble();
+        
+        double moyenne = (note1 + note2 + note3) / 3;
+        System.out.println("La moyenne est: " + moyenne);
+        
+        scanner.close();
+    }
+}

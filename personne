@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class UserInfo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Entrez votre prénom: ");
+        String prenom = scanner.nextLine();
+        
+        System.out.print("Entrez votre nom: ");
+        String nom = scanner.nextLine();
+        
+        System.out.print("Entrez votre âge: ");
+        int age = scanner.nextInt();
+        
+        System.out.println("Bonjour, " + prenom + " " + nom + ", vous avez " + age + " ans.");
+        
+        scanner.close();
+    }
+}
